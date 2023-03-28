@@ -10,10 +10,11 @@ server:
 spring:
   application:
     name: catalog-service
-  config:
-    import: "optional:configserver:"
+#  config:
+#    import: "optional:configserver:"
   cloud:
     config:
+      import-check.enabled: false
       uri: http://localhost:8888
       request-connect-timeout: 5000 # 5s
       request-read-timeout: 5000 # 5s
