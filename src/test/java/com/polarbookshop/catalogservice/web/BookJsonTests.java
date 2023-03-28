@@ -31,11 +31,6 @@ class BookJsonTests {
 
     @Test
     void testDeserialize() throws Exception {
-		var test = """
-				test
-				test
-				""";
-    	System.out.println(test);
         var content = """
                 {
                     "isbn": "1234567890",
